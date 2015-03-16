@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.NewCharacterControl">
+   <children>
+      <ImageView layoutX="1.0" layoutY="1.0">
+         <image>
+            <Image url="@../Images/newCharacterScreen.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#94ff2100" height="401.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cbd0" height="157.0" layoutX="42.0" layoutY="153.0" opacity="0.29" stroke="BLACK" strokeType="INSIDE" width="355.0" />
+      <Text fill="WHITE" layoutX="83.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " wrappingWidth="81.427734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="87.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="189.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilot:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <AnchorPane layoutX="44.0" layoutY="228.0" />
+      <Text fill="WHITE" layoutX="188.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trader:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="188.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Engineer:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="188.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investor:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <TextField fx:id="playerName" layoutX="167.0" layoutY="105.0" prefHeight="25.0" prefWidth="205.0" promptText="name here" />
+      <TextField fx:id="pilotPointsInput" editable="false" layoutX="255.0" layoutY="166.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <TextField fx:id="fighterPointsInput" editable="false" layoutX="255.0" layoutY="191.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <TextField fx:id="traderPointsInput" editable="false" layoutX="255.0" layoutY="216.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <TextField fx:id="engineeringPointsInput" editable="false" layoutX="255.0" layoutY="242.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <TextField fx:id="investorPointsInput" editable="false" layoutX="255.0" layoutY="267.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <Text fill="WHITE" layoutX="189.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fighter:">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <TextField fx:id="remainingSkillPoints" editable="false" layoutX="87.0" layoutY="221.0" prefHeight="51.0" prefWidth="57.0" text="15">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Button fx:id="acceptBtn" layoutX="125.0" layoutY="338.0" mnemonicParsing="false" onAction="#acceptPlayerInputAction" opacity="0.9" prefHeight="32.0" prefWidth="79.0" text="Accept" textAlignment="CENTER">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="cancelBtn" layoutX="242.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelScreen" opacity="0.9" prefHeight="32.0" prefWidth="79.0" text="Cancel" textAlignment="CENTER">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="addPilot" layoutX="294.0" layoutY="164.0" mnemonicParsing="false" onAction="#addToPilot" prefHeight="17.0" prefWidth="26.0" text="+" />
+      <Button fx:id="addFighter" layoutX="294.0" layoutY="190.0" mnemonicParsing="false" onAction="#addToFighter" prefHeight="25.0" prefWidth="26.0" text="+" />
+      <Button fx:id="addTrader" layoutX="294.0" layoutY="216.0" mnemonicParsing="false" onAction="#addToTrader" prefHeight="25.0" prefWidth="26.0" text="+" />
+      <Button fx:id="addEngineer" layoutX="294.0" layoutY="242.0" mnemonicParsing="false" onAction="#addToEngineer" prefHeight="17.0" prefWidth="26.0" text="+" />
+      <Button fx:id="addInvestor" layoutX="294.0" layoutY="268.0" mnemonicParsing="false" onAction="#addToInvestor" prefHeight="10.0" prefWidth="26.0" text="+" />
+      <Button fx:id="subtractPilot" layoutX="326.0" layoutY="164.0" mnemonicParsing="false" onAction="#subtractFromPilot" prefHeight="17.0" prefWidth="26.0" text="-" />
+      <Button fx:id="subtractFighter" layoutX="326.0" layoutY="190.0" mnemonicParsing="false" onAction="#subtractFromFighter" prefHeight="25.0" prefWidth="26.0" text="-" />
+      <Button fx:id="subtractTrader" layoutX="326.0" layoutY="216.0" mnemonicParsing="false" onAction="#subtractFromTrader" prefHeight="25.0" prefWidth="26.0" text="-" />
+      <Button fx:id="subtractEngineer" layoutX="326.0" layoutY="242.0" mnemonicParsing="false" onAction="#subtractFromEngineer" prefHeight="17.0" prefWidth="26.0" text="-" />
+      <Button fx:id="subtractInvestor" layoutX="326.0" layoutY="268.0" mnemonicParsing="false" onAction="#subtractFromInvestor" prefHeight="10.0" prefWidth="26.0" text="-" />
+   </children>
+</AnchorPane>

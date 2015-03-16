@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.ShipyardControl">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Images/marketScreen.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cbd0" height="154.0" layoutX="13.0" layoutY="237.0" opacity="0.29" stroke="BLACK" strokeType="INSIDE" width="354.0" />
+      <Label layoutX="155.0" layoutY="9.0" prefHeight="34.0" prefWidth="344.0" text="Welcome to the Shipyard" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <TextField fx:id="playerMoney" editable="false" layoutX="23.0" layoutY="350.0" prefHeight="25.0" prefWidth="90.0" promptText="Player Money" />
+      <Label fx:id="merchantInventoryText" layoutX="226.0" layoutY="43.0" prefHeight="25.0" prefWidth="136.0" text="Merchant Ships" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="shipCargoText" layoutX="142.0" layoutY="242.0" prefHeight="25.0" prefWidth="90.0" text="Current Ship" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dialogBox" editable="false" layoutX="379.0" layoutY="242.0" prefHeight="69.0" prefWidth="147.0" />
+      <Button fx:id="buy1" layoutX="431.0" layoutY="81.0" mnemonicParsing="false" onAction="#buyFlea" text="Buy" />
+      <Button fx:id="buy2" layoutX="431.0" layoutY="111.0" mnemonicParsing="false" onAction="#buyGnat" text="Buy" />
+      <TextField fx:id="ship2" editable="false" layoutX="142.0" layoutY="111.0" prefHeight="25.0" prefWidth="90.0" text="Gnat" />
+      <TextField fx:id="ship1" editable="false" layoutX="142.0" layoutY="83.0" prefHeight="25.0" prefWidth="90.0" text="Flea" />
+      <TextField fx:id="shipCargo2" editable="false" layoutX="237.0" layoutY="110.0" prefHeight="25.0" prefWidth="44.0" text="5" />
+      <TextField fx:id="shipCargo1" editable="false" layoutX="237.0" layoutY="82.0" prefHeight="25.0" prefWidth="44.0" text="8" />
+      <TextField fx:id="shipPrice1" editable="false" layoutX="384.0" layoutY="82.0" prefHeight="25.0" prefWidth="44.0" text="150" />
+      <TextField fx:id="shipPrice2" editable="false" layoutX="384.0" layoutY="111.0" prefHeight="25.0" prefWidth="44.0" text="150" />
+      <TextField fx:id="ship5" editable="false" layoutX="142.0" layoutY="195.0" prefHeight="25.0" prefWidth="90.0" text="BumbleBee" />
+      <TextField fx:id="ship4" editable="false" layoutX="142.0" layoutY="167.0" prefHeight="25.0" prefWidth="90.0" text="Mosquito" />
+      <TextField fx:id="ship3" editable="false" layoutX="142.0" layoutY="139.0" prefHeight="25.0" prefWidth="90.0" text="Firefly" />
+      <Button fx:id="buy4" layoutX="431.0" layoutY="167.0" mnemonicParsing="false" onAction="#buyMosquito" text="Buy" />
+      <Button fx:id="buy3" layoutX="431.0" layoutY="139.0" mnemonicParsing="false" onAction="#buyFirefly" text="Buy" />
+      <Button fx:id="buy5" layoutX="431.0" layoutY="195.0" mnemonicParsing="false" onAction="#buyBumblebee" text="Buy" />
+      <Label fx:id="welcomeText111" layoutX="242.0" layoutY="66.0" prefHeight="15.0" prefWidth="34.0" text="Cargo" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1111" layoutX="394.0" layoutY="66.0" prefHeight="14.0" prefWidth="25.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="shipCargo3" editable="false" layoutX="237.0" layoutY="138.0" prefHeight="25.0" prefWidth="44.0" text="6" />
+      <TextField fx:id="shipCargo4" editable="false" layoutX="237.0" layoutY="166.0" prefHeight="25.0" prefWidth="44.0" text="4" />
+      <TextField fx:id="shipCargo5" editable="false" layoutX="238.0" layoutY="194.0" prefHeight="25.0" prefWidth="44.0" text="7" />
+      <TextField fx:id="shipPrice4" editable="false" layoutX="384.0" layoutY="166.0" prefHeight="25.0" prefWidth="44.0" text="100" />
+      <TextField fx:id="shipPrice3" editable="false" layoutX="384.0" layoutY="138.0" prefHeight="25.0" prefWidth="44.0" text="200" />
+      <TextField fx:id="shipPrice5" editable="false" layoutX="384.0" layoutY="194.0" prefHeight="25.0" prefWidth="44.0" text="200" />
+      <Label fx:id="welcomeText11111" layoutX="179.0" layoutY="66.0" prefHeight="15.0" prefWidth="34.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="shipFuel5" editable="false" layoutX="286.0" layoutY="194.0" prefHeight="25.0" prefWidth="44.0" text="300" />
+      <TextField fx:id="shipFuel4" editable="false" layoutX="286.0" layoutY="166.0" prefHeight="25.0" prefWidth="44.0" text="600" />
+      <TextField fx:id="shipFuel3" editable="false" layoutX="286.0" layoutY="138.0" prefHeight="25.0" prefWidth="44.0" text="400" />
+      <TextField fx:id="shipFuel1" editable="false" layoutX="286.0" layoutY="82.0" prefHeight="25.0" prefWidth="44.0" text="200" />
+      <TextField fx:id="shipFuel2" editable="false" layoutX="286.0" layoutY="110.0" prefHeight="25.0" prefWidth="44.0" text="500" />
+      <TextField fx:id="shipHull2" editable="false" layoutX="335.0" layoutY="110.0" prefHeight="25.0" prefWidth="44.0" text="3" />
+      <TextField fx:id="shipHull1" editable="false" layoutX="335.0" layoutY="82.0" prefHeight="25.0" prefWidth="44.0" text="5" />
+      <TextField fx:id="shipHull3" editable="false" layoutX="335.0" layoutY="138.0" prefHeight="25.0" prefWidth="44.0" text="8" />
+      <TextField fx:id="shipHull4" editable="false" layoutX="335.0" layoutY="166.0" prefHeight="25.0" prefWidth="44.0" text="3" />
+      <TextField fx:id="shipHull5" editable="false" layoutX="335.0" layoutY="194.0" prefHeight="25.0" prefWidth="44.0" text="4" />
+      <Label fx:id="welcomeText1112" layoutX="291.0" layoutY="66.0" prefHeight="15.0" prefWidth="34.0" text="Fuel" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1113" layoutX="340.0" layoutY="66.0" prefHeight="15.0" prefWidth="34.0" text="Hull" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11131" layoutX="221.0" layoutY="269.0" prefHeight="15.0" prefWidth="34.0" text="Hull" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11121" layoutX="172.0" layoutY="269.0" prefHeight="15.0" prefWidth="34.0" text="Fuel" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerShipHull" editable="false" layoutX="216.0" layoutY="285.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="playerShipFuel" editable="false" layoutX="167.0" layoutY="285.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText111111" layoutX="60.0" layoutY="269.0" prefHeight="15.0" prefWidth="34.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11112" layoutX="275.0" layoutY="269.0" prefHeight="14.0" prefWidth="25.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1114" layoutX="123.0" layoutY="269.0" prefHeight="15.0" prefWidth="34.0" text="Cargo" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerShipPrice" editable="false" layoutX="265.0" layoutY="285.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="playerShipCargo" editable="false" layoutX="118.0" layoutY="285.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="playerShip" editable="false" layoutX="23.0" layoutY="286.0" prefHeight="25.0" prefWidth="90.0" promptText="Current Ship" />
+      <Button fx:id="backBtn" layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#backToMarket" prefHeight="25.0" prefWidth="72.0" text="Back" />
+      <Button fx:id="shipUpgradeBtn" layoutX="481.0" layoutY="31.0" mnemonicParsing="false" onAction="#toShipUpgrade" prefHeight="25.0" prefWidth="101.0" text="Ship Upgrades" />
+   </children>
+</Pane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.ShipUpgradeControl">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Images/marketScreen.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cbd0" height="199.0" layoutX="123.0" layoutY="187.0" opacity="0.29" stroke="BLACK" strokeType="INSIDE" width="354.0" />
+      <Label layoutX="211.0" layoutY="9.0" prefHeight="34.0" prefWidth="178.0" text="Ship Upgrades" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <TextField fx:id="playerMoney" editable="false" layoutX="374.0" layoutY="343.0" prefHeight="25.0" prefWidth="90.0" />
+      <Label fx:id="shipCargoText" layoutX="262.0" layoutY="201.0" prefHeight="15.0" prefWidth="90.0" text="Current Ship" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dialogBox" editable="false" layoutX="143.0" layoutY="338.0" prefHeight="34.0" prefWidth="213.0" />
+      <Button fx:id="buyFuelCapacity" layoutX="469.0" layoutY="75.0" mnemonicParsing="false" onAction="#buyFuelCapacity" text="Buy" />
+      <Button fx:id="buyHullStrength" layoutX="469.0" layoutY="137.0" mnemonicParsing="false" onAction="#buyHullStrength" text="Buy" />
+      <TextField fx:id="hullStrength" editable="false" layoutX="111.0" layoutY="137.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="fuelCapacity" editable="false" layoutX="111.0" layoutY="75.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="descriptHullStrength" editable="false" layoutX="206.0" layoutY="137.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="descriptFuelCapacity" editable="false" layoutX="206.0" layoutY="75.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="priceFuelCapacity" editable="false" layoutX="422.0" layoutY="75.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="priceHullStrength" editable="false" layoutX="423.0" layoutY="137.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText111" layoutX="244.0" layoutY="58.0" prefHeight="15.0" prefWidth="72.0" text="Description" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1111" layoutX="432.0" layoutY="56.0" prefHeight="14.0" prefWidth="25.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11111" layoutX="148.0" layoutY="58.0" prefHeight="15.0" prefWidth="34.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11131" layoutX="329.0" layoutY="239.0" prefHeight="15.0" prefWidth="66.0" text="Hull Strength" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText11121" layoutX="284.0" layoutY="239.0" prefHeight="15.0" prefWidth="53.0" text="Total Fuel" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerShipHull" editable="false" layoutX="334.0" layoutY="255.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="playerShipFuel" editable="false" layoutX="282.0" layoutY="255.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText111111" layoutX="175.0" layoutY="239.0" prefHeight="15.0" prefWidth="34.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1114" layoutX="246.0" layoutY="239.0" prefHeight="15.0" prefWidth="53.0" text="Cargo" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="playerShipCargo" editable="false" layoutX="233.0" layoutY="255.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="playerShip" editable="false" layoutX="138.0" layoutY="256.0" prefHeight="25.0" prefWidth="90.0" />
+      <Button fx:id="backBtn" layoutX="24.0" layoutY="31.0" mnemonicParsing="false" onAction="#backToShipyard" prefHeight="25.0" prefWidth="72.0" text="Back" />
+      <TextField fx:id="fuelUpgradeSlot" editable="false" layoutX="282.0" layoutY="302.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="hullUpgradeSlot" editable="false" layoutX="334.0" layoutY="302.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText111211" layoutX="185.0" layoutY="307.0" prefHeight="15.0" prefWidth="90.0" text="Upgrade Slots Left" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText111212" layoutX="295.0" layoutY="286.0" prefHeight="15.0" prefWidth="19.0" text="Fuel" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1112121" layoutX="347.0" layoutY="286.0" prefHeight="15.0" prefWidth="19.0" text="Hull" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mercQuarters" editable="false" layoutX="111.0" layoutY="106.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="descriptMercQuarters" editable="false" layoutX="206.0" layoutY="106.0" prefHeight="25.0" prefWidth="213.0" />
+      <TextField fx:id="priceMercQuarters" editable="false" layoutX="423.0" layoutY="106.0" prefHeight="25.0" prefWidth="44.0" />
+      <Button fx:id="buyMercQuarters" layoutX="469.0" layoutY="106.0" mnemonicParsing="false" onAction="#buyMercQuarters" text="Buy" />
+      <TextField fx:id="playerShipMerc" editable="false" layoutX="389.0" layoutY="255.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText111311" layoutX="390.0" layoutY="239.0" prefHeight="15.0" prefWidth="66.0" text="Merc Quarters" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mercUpgradeSlot" editable="false" layoutX="389.0" layoutY="302.0" prefHeight="25.0" prefWidth="44.0" />
+      <Label fx:id="welcomeText11121211" layoutX="400.0" layoutY="286.0" prefHeight="15.0" prefWidth="34.0" text="Merc" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

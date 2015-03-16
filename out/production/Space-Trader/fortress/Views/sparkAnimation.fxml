@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+
+<GridPane alignment="CENTER" hgap="65.0" prefHeight="400.0" prefWidth="600.0" vgap="84.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.SparkAnimationControl">
+    <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="603.0" />
+              <ImageView fx:id="spark">
+                  <image>
+                      <Image url="@../images/spark.jpg" />
+                  </image>
+                  <viewport>
+                      <Rectangle2D height="148.0" width="148.0" />
+                  </viewport>
+              </ImageView>
+            <Text fill="#e5be12" layoutX="169.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Star!" wrappingWidth="350.6829261779785">
+               <font>
+                  <Font size="87.0" />
+               </font>
+            </Text>
+            <Text fill="#e5be12" layoutX="42.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Received 500 money!" wrappingWidth="350.68292236328125">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="collect" layoutX="433.0" layoutY="285.0" mnemonicParsing="false" onAction="#collectMoney" prefHeight="38.0" prefWidth="87.0" text="Collect" />
+         </children>
+      </Pane>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="148.0" minHeight="148.0" prefHeight="148.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+</GridPane>

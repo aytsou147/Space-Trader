@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.Controller">
+   <children>
+      <ImageView>
+         <image>
+            <Image url="@../Images/SpaceTraderStartScreen.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="newGame" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="253.0" layoutY="171.0" mnemonicParsing="false" onAction="#goToCharacterCreationScreen" style="-fx-background-color: #FFFFFF;" text="New Game" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button fx:id="exitGame" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="260.0" layoutY="257.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF;" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button fx:id="loadGame" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="251.0" layoutY="212.0" mnemonicParsing="false" onAction="#loadGame" style="-fx-background-color: #FFFFFF;" text="Load Game" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

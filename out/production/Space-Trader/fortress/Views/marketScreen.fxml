@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.MarketControl">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Images/marketScreen.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cbd0" height="326.0" layoutX="35.0" layoutY="65.0" opacity="0.29" stroke="BLACK" strokeType="INSIDE" width="217.0" />
+      <Label layoutX="107.0" layoutY="14.0" prefHeight="34.0" prefWidth="276.0" text="Welcome to the Market At:" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Button fx:id="sell5" layoutX="180.0" layoutY="213.0" mnemonicParsing="false" onAction="#sellSpace5" text="Sell" />
+      <TextField fx:id="itemP1" editable="false" layoutX="70.0" layoutY="101.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP2" editable="false" layoutX="70.0" layoutY="129.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP3" editable="false" layoutX="70.0" layoutY="157.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP4" editable="false" layoutX="70.0" layoutY="185.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP5" editable="false" layoutX="70.0" layoutY="213.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="playerMoney" layoutX="47.0" layoutY="353.0" prefHeight="25.0" prefWidth="90.0" promptText="Player Money" />
+      <TextField fx:id="planetName" layoutX="387.0" layoutY="19.0" prefHeight="25.0" prefWidth="98.0" promptText="Planet Name" />
+      <Label fx:id="merchantInventoryText" layoutX="355.0" layoutY="66.0" prefHeight="25.0" prefWidth="136.0" text="Merchant Inventory" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="shipCargoText" layoutX="109.0" layoutY="70.0" prefHeight="25.0" prefWidth="76.0" text="Ship Cargo" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="techLevel" layoutX="499.0" layoutY="19.0" prefHeight="25.0" prefWidth="76.0" promptText="Tech Level" />
+      <Label layoutX="486.0" layoutY="15.0" prefHeight="34.0" prefWidth="34.0" text="-">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dialog" editable="false" layoutX="55.0" layoutY="325.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button fx:id="sell4" layoutX="180.0" layoutY="185.0" mnemonicParsing="false" onAction="#sellSpace4" text="Sell" />
+      <Button fx:id="sell3" layoutX="180.0" layoutY="157.0" mnemonicParsing="false" onAction="#sellSpace3" text="Sell" />
+      <Button fx:id="sell2" layoutX="180.0" layoutY="129.0" mnemonicParsing="false" onAction="#sellSpace2" text="Sell" />
+      <Button fx:id="sell1" layoutX="180.0" layoutY="101.0" mnemonicParsing="false" onAction="#sellSpace1" text="Sell" />
+      <Button fx:id="buy1" layoutX="400.0" layoutY="106.0" mnemonicParsing="false" onAction="#buyProduct1" text="Buy" />
+      <Button fx:id="buy2" layoutX="400.0" layoutY="134.0" mnemonicParsing="false" onAction="#buyProduct2" text="Buy" />
+      <TextField fx:id="merchantItem2" editable="false" layoutX="290.0" layoutY="134.0" prefHeight="25.0" prefWidth="98.0" text="Furs" />
+      <TextField fx:id="merchantItem1" editable="false" layoutX="290.0" layoutY="106.0" prefHeight="25.0" prefWidth="98.0" text="Water" />
+      <TextField fx:id="merchantQt2" editable="false" layoutX="446.0" layoutY="134.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt1" editable="false" layoutX="446.0" layoutY="106.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="price1" editable="false" layoutX="506.0" layoutY="106.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price2" editable="false" layoutX="506.0" layoutY="134.0" prefHeight="25.0" prefWidth="59.0" />
+      <Button fx:id="changePlanet" layoutX="146.0" layoutY="353.0" mnemonicParsing="false" onAction="#changePlanet" text="Change Planet" />
+      <TextField fx:id="itemP8" editable="false" layoutX="70.0" layoutY="297.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP7" editable="false" layoutX="70.0" layoutY="269.0" prefHeight="25.0" prefWidth="98.0" />
+      <TextField fx:id="itemP6" editable="false" layoutX="70.0" layoutY="241.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button fx:id="sell6" layoutX="180.0" layoutY="241.0" mnemonicParsing="false" onAction="#sellSpace6" text="Sell" />
+      <Button fx:id="sell7" layoutX="180.0" layoutY="269.0" mnemonicParsing="false" onAction="#sellSpace7" text="Sell" />
+      <Button fx:id="sell8" layoutX="180.0" layoutY="297.0" mnemonicParsing="false" onAction="#sellSpace8" text="Sell" />
+      <TextField fx:id="merchantItem6" editable="false" layoutX="290.0" layoutY="246.0" prefHeight="25.0" prefWidth="98.0" text="Firearms" />
+      <TextField fx:id="merchantItem7" editable="false" layoutX="290.0" layoutY="274.0" prefHeight="25.0" prefWidth="98.0" text="Medicine" />
+      <TextField fx:id="merchantItem8" editable="false" layoutX="290.0" layoutY="302.0" prefHeight="25.0" prefWidth="98.0" text="Machines" />
+      <TextField fx:id="merchantItem5" editable="false" layoutX="290.0" layoutY="218.0" prefHeight="25.0" prefWidth="98.0" text="Games" />
+      <TextField fx:id="merchantItem4" editable="false" layoutX="290.0" layoutY="190.0" prefHeight="25.0" prefWidth="98.0" text="Ore" />
+      <TextField fx:id="merchantItem3" editable="false" layoutX="290.0" layoutY="162.0" prefHeight="25.0" prefWidth="98.0" text="Food" />
+      <Button fx:id="buy4" layoutX="400.0" layoutY="190.0" mnemonicParsing="false" onAction="#buyProduct4" text="Buy" />
+      <Button fx:id="buy3" layoutX="400.0" layoutY="162.0" mnemonicParsing="false" onAction="#buyProduct3" text="Buy" />
+      <Button fx:id="buy6" layoutX="400.0" layoutY="246.0" mnemonicParsing="false" onAction="#buyProduct6" text="Buy" />
+      <Button fx:id="buy5" layoutX="400.0" layoutY="218.0" mnemonicParsing="false" onAction="#buyProduct5" text="Buy" />
+      <Button fx:id="buy8" layoutX="400.0" layoutY="302.0" mnemonicParsing="false" onAction="#buyProduct8" text="Buy" />
+      <Button fx:id="buy7" layoutX="400.0" layoutY="274.0" mnemonicParsing="false" onAction="#buyProduct7" text="Buy" />
+      <Button fx:id="buy9" layoutX="400.0" layoutY="330.0" mnemonicParsing="false" onAction="#buyProduct9" text="Buy" />
+      <Button fx:id="buy10" layoutX="400.0" layoutY="358.0" mnemonicParsing="false" onAction="#buyProduct10" text="Buy" />
+      <TextField fx:id="merchantItem10" editable="false" layoutX="290.0" layoutY="358.0" prefHeight="25.0" prefWidth="98.0" text="Robots" />
+      <TextField fx:id="merchantItem9" editable="false" layoutX="290.0" layoutY="330.0" prefHeight="25.0" prefWidth="98.0" text="Narcotics" />
+      <Label fx:id="welcomeText111" layoutX="461.0" layoutY="89.0" prefHeight="15.0" prefWidth="14.0" text="Qt." textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeText1111" layoutX="523.0" layoutY="89.0" prefHeight="14.0" prefWidth="25.0" text="Price" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="merchantQt3" editable="false" layoutX="446.0" layoutY="162.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt4" editable="false" layoutX="446.0" layoutY="190.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt8" editable="false" layoutX="446.0" layoutY="302.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt7" editable="false" layoutX="446.0" layoutY="274.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt5" editable="false" layoutX="446.0" layoutY="218.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt6" editable="false" layoutX="446.0" layoutY="246.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt9" editable="false" layoutX="446.0" layoutY="329.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="merchantQt10" editable="false" layoutX="446.0" layoutY="357.0" prefHeight="25.0" prefWidth="44.0" />
+      <TextField fx:id="price4" editable="false" layoutX="506.0" layoutY="189.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price3" editable="false" layoutX="506.0" layoutY="161.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price6" editable="false" layoutX="506.0" layoutY="245.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price5" editable="false" layoutX="506.0" layoutY="217.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price8" editable="false" layoutX="506.0" layoutY="301.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price7" editable="false" layoutX="506.0" layoutY="273.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price10" editable="false" layoutX="506.0" layoutY="357.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="price9" editable="false" layoutX="506.0" layoutY="329.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label fx:id="welcomeText11111" layoutX="327.0" layoutY="89.0" prefHeight="15.0" prefWidth="34.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="shipyardBtn" layoutX="496.0" layoutY="54.0" mnemonicParsing="false" onAction="#toShipYard" prefHeight="25.0" prefWidth="83.0" text="To Shipyard" />
+   </children>
+</Pane>

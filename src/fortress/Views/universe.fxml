@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fortress.Controllers.UniverseControl">
+   <children>
+       <ImageView layoutX="1.0" layoutY="1.0">
+           <image>
+               <Image url="@../Images/UniverseScreen.jpg" />
+           </image>
+       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8cbd0" height="100.0" layoutX="29.0" layoutY="117.0" opacity="0.29" stroke="BLACK" strokeType="INSIDE" width="546.0" />
+      <Label layoutX="47.0" layoutY="127.0" prefHeight="35.0" prefWidth="106.0" text="Welcome to:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="toMarket" layoutX="506.0" layoutY="72.0" mnemonicParsing="false" onAction="#goToMarketScreen" text="To Market" />
+       <TextField fx:id="planetName" editable="false" layoutX="153.0" layoutY="132.0" />
+      <Label layoutX="263.0" layoutY="222.0" prefHeight="35.0" prefWidth="80.0" text="Warp To:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="wonder" layoutX="142.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToWonder" prefHeight="25.0" prefWidth="96.0" text="Wonderworld" />
+      <Button fx:id="batman" layoutX="250.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToBatman" prefHeight="25.0" prefWidth="96.0" text="Batmanworld" />
+      <Button fx:id="arvind" layoutX="362.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToArvind" prefHeight="25.0" prefWidth="96.0" text="Arvindworld" />
+      <Button fx:id="thao" layoutX="362.0" layoutY="330.0" mnemonicParsing="false" onAction="#goToThao" prefHeight="25.0" prefWidth="96.0" text="Thaoworld" />
+      <Button fx:id="ishaan" layoutX="250.0" layoutY="330.0" mnemonicParsing="false" onAction="#goToIshaan" prefHeight="25.0" prefWidth="96.0" text="Ishaanworld" />
+      <Button fx:id="anthony" layoutX="141.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToAnthony" prefHeight="25.0" prefWidth="96.0" text="Anthonyworld" />
+      <Button fx:id="luigi" layoutX="32.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToLuigi" prefHeight="25.0" prefWidth="96.0" text="Luigiworld" />
+      <Button fx:id="mario" layoutX="473.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToMario" prefHeight="25.0" prefWidth="96.0" text="Marioworld" />
+      <Button fx:id="pokemon" layoutX="141.0" layoutY="330.0" mnemonicParsing="false" onAction="#goToPokemon" text="Pokemonworld" />
+      <Button fx:id="jim" layoutX="250.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToJim" prefHeight="25.0" prefWidth="96.0" text="Jimsworld" />
+      <Button fx:id="michael" layoutX="473.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToMichael" prefHeight="25.0" prefWidth="96.0" text="Michaelsworld" />
+      <Button fx:id="wayne" layoutX="362.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToWayne" prefHeight="25.0" prefWidth="96.0" text="Waynesworld" />
+      <Button fx:id="zelda" layoutX="32.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToZelda" prefHeight="25.0" prefWidth="96.0" text="Zeldaworld" />
+      <Label layoutX="69.0" layoutY="167.0" prefHeight="35.0" prefWidth="89.0" text="Total Fuel:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fuelAmount" editable="false" layoutX="167.0" layoutY="172.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField fx:id="dialogBox" layoutX="343.0" layoutY="132.0" prefHeight="25.0" prefWidth="205.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="dialogBox1" layoutX="246.0" layoutY="170.0" prefHeight="30.0" prefWidth="302.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveMenu" layoutX="497.0" layoutY="37.0" mnemonicParsing="false" onAction="#goToSaveMenu" prefHeight="26.0" prefWidth="96.0" text="Save Menu" />
+      <TextField fx:id="playerName" editable="false" layoutX="121.0" layoutY="72.0" prefHeight="26.0" prefWidth="222.0" />
+      <Button fx:id="star" disable="true" layoutX="32.0" layoutY="268.0" mnemonicParsing="false" onAction="#goToStar" prefHeight="92.0" prefWidth="546.0" text="SUPER STAR" visible="false">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
